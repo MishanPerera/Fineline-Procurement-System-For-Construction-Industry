@@ -1,43 +1,48 @@
 import React from  "react";
-import '../../NavBar.css';
+import '../NavBar.css';
 import {Link} from 'react-router-dom';
+import logo from "../assets/logo.png";
 
-export default function NavBar() {
+function Navbar() {
     return(
      <>
     
         <ul class="nav flex-column"  className="sticky-top"><b>
 
-                    <li className="nav-item" class="text-white">
-                      <Link to="/addOrder" className="nav-link active" aria-current="page"  class="text-white">HOME</Link>
+        <li>
+          <h2>fineline</h2>
+        </li>
+        
+        <li className="nav-item">
+        <img src={logo} width="250" height="200"/>
+        </li>
+      
+                    <li className="nav-item">
+                    <Link to="/" className="nav-link active" aria-current="page"  >Purchase Order</Link>
                     </li>
             
                     <li className="nav-item">
-                      <Link to = "/addfacilities" className="nav-link" class="text-white"> ADD SERVICE FACILITIES</Link>
+                      <Link to = "/" className="nav-link" > Purchase History</Link>
                     </li>
                     <li className="nav-item">
-                      <Link to = "/facilities" className="nav-link" class="text-white"> VIEW SERVICE FACILITIES</Link>
+                      <Link to = "/" className="nav-link" > View Invoice</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to = "/addnservice" className="nav-link" class="text-white"> ADD NORMAL SERVICE</Link>
+                    <Link to = "/" className="nav-link" > Create Credit Note</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to = "/addfservice" className="nav-link" class="text-white"> ADD FULL SERVICE</Link>
+                    <Link to = "/" className="nav-link" > Procedure and Policy</Link>
                     </li>
-                    <li className="nav-item">
-                    <Link to = "/searchservice" className="nav-link" class="text-white"> SERACH SERVICE</Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link to="/servicereport" className="nav-link" class="text-white">GENERATE REPORT</Link>
-                    </li>
-            <br/><br/>
+                    
+            
             <li>
-                <br/>
-                <h6 class="text-white"> &nbsp;&nbsp; Copyright 2021 @ INFINITY <br/></h6>
-                <h6 class="text-white"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All Rights Reserved</h6><br/>
+                <h4 className="text-white">Copyright 2022 @ DevX </h4>
+                <h4 className="text-white"> All Rights Reserved</h4>
             </li>
             </b>
         </ul>
      </>
   )
 }
+
+export default Navbar;
