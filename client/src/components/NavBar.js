@@ -7,10 +7,10 @@ function Navbar() {
     return(
      <>
     
-        <ul class="nav flex-column"  className="sticky-top"><b>
+        <ul class="nav flex-column"  ><b>
 
         <li>
-          <h2>fineline</h2>
+          <h2 style={{ fontFamily: 'Kolker Brush', fontSize: 27 }}>fineline</h2>
         </li>
         
         <li className="nav-item">
@@ -18,7 +18,7 @@ function Navbar() {
         </li>
       
                     <li className="nav-item">
-                    <Link to="/" className="nav-link active" aria-current="page"  >Purchase Order</Link>
+                    <Link to="/purchase-order" className="nav-link active" aria-current="page"  >Purchase Order</Link>
                     </li>
             
                     <li className="nav-item">
