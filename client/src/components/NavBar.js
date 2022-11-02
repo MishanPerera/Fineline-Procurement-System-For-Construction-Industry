@@ -10,7 +10,7 @@ function Navbar() {
         <ul class="nav flex-column"  ><b>
 
         <li>
-          <h2 style={{ fontFamily: 'Kolker Brush', fontSize: 27 }}>fineline</h2>
+          <h2 style={{ fontfamily: 'Brush Script MT', fontSize: 50 }}>&nbsp;&nbsp;&nbsp;&nbsp;fineline</h2>
         </li>
         
         <li className="nav-item">
