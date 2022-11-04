@@ -7,10 +7,10 @@ function Navbar() {
     return(
      <>
     
-        <ul class="nav flex-column"  className="sticky-top"><b>
+        <ul class="nav flex-column"  ><b>
 
         <li>
-          <h2>fineline</h2>
+          <h2 style={{ fontfamily: 'Brush Script MT', fontSize: 50 }}>&nbsp;&nbsp;&nbsp;&nbsp;fineline</h2>
         </li>
         
         <li className="nav-item">
@@ -18,7 +18,11 @@ function Navbar() {
         </li>
       
                     <li className="nav-item">
+<<<<<<< HEAD
                     <Link to="/order" className="nav-link active" aria-current="page"  >Purchase Order</Link>
+=======
+                    <Link to="/purchase-order" className="nav-link active" aria-current="page"  >Purchase Order</Link>
+>>>>>>> 92341e1454c4d0b39aa899031e226da0ac470b12
                     </li>
             
                     <li className="nav-item">
