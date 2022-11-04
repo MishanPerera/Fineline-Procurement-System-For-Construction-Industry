@@ -18,7 +18,7 @@ function Navbar() {
         </li>
       
                     <li className="nav-item">
-                    <Link to="/" className="nav-link active" aria-current="page"  >Purchase Order</Link>
+                    <Link to="/order" className="nav-link active" aria-current="page"  >Purchase Order</Link>
                     </li>
             
                     <li className="nav-item">

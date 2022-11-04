@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import '../Form.css';
 import axios from "axios";
+import NavBar from "./NavBar";
 
 export default function PurchaseOrder() {
 
@@ -44,6 +46,7 @@ export default function PurchaseOrder() {
 
     return (
         <div>
+            <NavBar/>
             <div className="addOrder">
                 <form className="Form1" onSubmit={(e) => { if (window.confirm('Select "OK" If You Want To Confirm The Order'))sendData(e)}} style={{ background: "#151e3d" }}>
 
